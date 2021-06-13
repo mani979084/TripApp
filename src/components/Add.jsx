@@ -54,7 +54,7 @@ const Add = ({ addTrip, getTrip }) => {
                 <p>Add a trip</p>
                 <form onSubmit={handleClick} className='add-field'>
 
-                    <input onChange={handleChange} ref={datefield} value={getdata.date} name='date' type="date" />
+                    <input onChange={handleChange} ref={datefield} placeholder='date' value={getdata.date} name='date' type="date" />
                     <input onChange={handleChange} ref={placefield} autoComplete="off" value={getdata.place} name='place' type="text" placeholder='place' />
                     <select onChange={handleChange} name='type' value={getdata.type} id="">
                         <option value="Trek">Trek</option>
