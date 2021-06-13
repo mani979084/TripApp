@@ -12,7 +12,7 @@ const Home = ({ getdata }) => {
     return (
         <>
             <div className='home-head'>
-                <p>{getdata.length}<span> trips</span> </p>
+                <p>{getdata.length}<span> trip{getdata.length > 1 && 's'}</span> </p>
                 <div className='home-sub'>
                     <p>{
                         getdata.filter((d) => (d.type === 'Trek')).length

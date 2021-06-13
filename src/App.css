@@ -21,14 +21,13 @@ body{
 
 .home-head{
     font-weight: 300;
-    font-size: 4rem;
     color: white;
-    width: 100%;
     text-align: center;
-    margin: auto 0;
+    margin: auto ;
 }
-.home-head p{
-margin-top: 0;
+.home-head >p{
+    font-size: 4rem;
+    margin-top: 0;
 }
 .home-head span{
     font-size: 1rem;
@@ -39,18 +38,18 @@ margin-top: 0;
     justify-content: center;
 }
 .home-sub p{
+    font-size: 3.5rem;
     margin: 50px;
     padding: 0 20px;
 }
 .home-load{
-    display: inline-block;
-    width: 32%;
+    padding: 0 80px;
 }
-.home-load span{
+.home-load span:first-of-type{
     float:right;
 }
 .home-limit{
-    float: left !important;
+    float: left ;
 }
 .MuiLinearProgress-barColorSecondary{
     background-color:white !important;
@@ -205,10 +204,9 @@ thead th{
     margin: 30px;
     font-size: 2.5rem;
 }
-.home-head{
-    margin: auto 0;
-}
+
 .add-head p{
+    font-size: 2rem;
     margin-top: 0;
 }
 .add-field input{
@@ -228,6 +226,9 @@ table th:last-child{
     display: block;
     width: fit-content;
     margin:0 auto;
+}
+.show-head > p{
+    font-size: 2rem;
 }
 
 }
