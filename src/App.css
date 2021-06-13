@@ -52,6 +52,12 @@ margin-top: 0;
 .home-limit{
     float: left !important;
 }
+.MuiLinearProgress-barColorSecondary{
+    background-color:white !important;
+}
+.MuiLinearProgress-colorSecondary{
+    background-color: rgba(255,255,255,0.3) !important;
+}
 
 .main{
     margin: 10px 0;
@@ -60,15 +66,10 @@ margin-top: 0;
 
 .show-head {
 color: white;
-width: 100%;
 text-align: center;
-margin: auto 0;
+margin: auto ;
 }
-.show-table{
-    display: flex;
-    justify-content: center;
-    
-}
+
 .show-head p{
     font-size: 2.5rem;
     margin-top: 0;
@@ -105,6 +106,17 @@ thead th{
     margin-top: 20px !important;
     font-size: 1.5rem !important;
 }
+.MuiCheckbox-root{
+    color: white !important;
+}
+.MuiCheckbox-root:hover{
+    background-color: rgba(255,255,255,0.1) !important;
+}
+.show-head p> span{
+    float: right;
+}
+
+
 
 .add-head{
     text-align: center;

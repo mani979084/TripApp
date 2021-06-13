@@ -4,6 +4,7 @@ import { addTrip } from '../actions/add'
 import PropTypes from 'prop-types'
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
+import { v4 as uuidv4 } from 'uuid'
 
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -11,13 +12,12 @@ function Alert(props) {
 
 const Add = ({ addTrip, getTrip }) => {
 
-    const getid = JSON.parse(localStorage.getItem('trip')) || []
     const [open, setOpen] = useState(false);
 
     const datefield = useRef();
     const placefield = useRef();
 
-    const [getdata, setdata] = useState({ id: getid.length, date: '', place: '', type: 'Trek' })
+    const [getdata, setdata] = useState({ date: '', place: '', type: 'Trek' })
 
     function handleChange(e) {
         datefield.current.style.borderColor = '#fff';
@@ -34,8 +34,8 @@ const Add = ({ addTrip, getTrip }) => {
         } else if (!getdata.place) {
             return placefield.current.style.borderColor = '#f54748';
         }
-        setdata({ ...getdata, id: getdata.id + 1, date: '', place: '' })
-        addTrip({ ...getdata, id: getdata.id + 1 })
+        setdata({ date: '', place: '' })
+        addTrip({ id: uuidv4(), ...getdata })
         setOpen(true);
     }
 
