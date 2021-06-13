@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(74, 75, 77);
+    font-family: 'Poppins', sans-serif ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_color{
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.nav_color a{
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-head{
+    font-weight: 300;
+    font-size: 4rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+}
+.home-head p{
+margin-top: 0;
+}
+.home-head span{
+    font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-sub{
+    display: flex;
+    justify-content: center;
+}
+.home-sub p{
+    margin: 50px;
+    padding: 0 20px;
+}
+.home-load{
+    display: inline-block;
+    width: 32%;
+}
+.home-load span{
+    float:right;
+}
+.home-limit{
+    float: left !important;
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+    margin: 10px 0;
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.show-head {
+color: white;
+width: 100%;
+text-align: center;
+margin: auto 0;
+}
+.show-table{
+    display: flex;
+    justify-content: center;
+    
+}
+.show-head p{
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+
+table{
+    text-align: left;
+}
+
+thead th{
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+    padding-right: 100px;
+}
+.show-icon{
+    margin-left: 10px;
+    font-size: .8rem;
+}
+.show-filter{
+    cursor: pointer;
+    margin-left: 10px;
+}
+.show-filter:hover{
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(74, 75, 77);
+}
+.show__filter{
+    margin-top: 50px;
+}
+.show-no{
+    margin-top: 20px !important;
+    font-size: 1.5rem !important;
+}
+
+.add-head{
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.add-head p{
+    font-size: 2.5rem;
+}
+.add-field{
+    display: flex;
+    flex-direction: column;
+
+}
+.add-field input{
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+    padding: 13px 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 350px;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.add-field select{
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    padding: 13px 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    .add-field option{
+    background-color: rgb(74, 75, 77);
+}
+.add-field input:focus,select:focus{
+    outline: none;
+}
+.add-field button{
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 8px 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-field button:hover{
+    background-color: white;
+    color:rgb(74, 75, 77);
+}
+.add-limit{
+    margin-left: 20px;
+}
+
+@media(max-width:768px){
+.main{
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+.nav_color{
+    margin: 0;
+    margin-top: 20px;
+    height: auto;
+    flex-direction: row;
+}
+.nav_color a{
+    margin: 0 40px;
+}
+.home-head> p{
+    margin:0 20px 40px 20px;
+    font-size: 3rem;
+}
+.home-sub p{
+    padding: 0;
+    margin: 30px;
+    font-size: 2.5rem;
+}
+.home-head{
+    margin: auto 0;
+}
+.add-head p{
+    margin-top: 0;
+}
+.add-field input{
+    width: 200px;
+}
+
+table th:first-child{
+    padding-right: 70px;
+}
+table th{
+    padding: 0 40px 0 0;
+}
+table th:last-child{
+    padding: 0;
+}
+.show__filter .show-filter:last-child{
+    display: block;
+    width: fit-content;
+    margin:0 auto;
+}
+
 }
