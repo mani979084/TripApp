@@ -34,7 +34,7 @@ const Add = ({ addTrip, getTrip }) => {
         } else if (!getdata.place) {
             return placefield.current.style.borderColor = '#f54748';
         }
-        setdata({ date: '', place: '' })
+        setdata({ date: '', place: '', type: 'Trek' })
         addTrip({ id: uuidv4(), ...getdata })
         setOpen(true);
     }

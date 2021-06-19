@@ -3,7 +3,10 @@
 body{
     margin: 0;
     padding: 0;
-    background: #111111;
+    /* background: #111111; */
+    background-image: url('./img/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Poppins', sans-serif ;
 }
 
@@ -59,7 +62,7 @@ body{
 }
 
 .main{
-    margin: 10px 0;
+
     display: flex;
 }
 
@@ -99,7 +102,7 @@ thead th{
     color: rgb(74, 75, 77);
 }
 .show__filter{
-    margin-top: 50px;
+    margin: 50px 0 20px 0;
 }
 .show-no{
     margin-top: 20px !important;
@@ -156,7 +159,7 @@ thead th{
     cursor: pointer;
 }
     .add-field option{
-    background-color: #222222;
+    background-color: #6600FF;
 }
 .add-field input:focus,select:focus{
     outline: none;
